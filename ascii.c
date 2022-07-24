@@ -3,6 +3,7 @@
 #include <string.h>
 #include <curl/curl.h>
 #define BUFFER_SIZE 1000
+
 void remove_line(FILE *src, FILE *temp, const int line);
 void read_file(FILE *fptr);
 
