@@ -117,7 +117,7 @@ int main(void) {
 	scanf("%s", link);
 
 	sprintf(combine, "%s%s%s%s%s", prt1, link, prt2, charset, prt3);
-	sscanf(combine, "%s", &c);
+	sscanf(combine, "%s", c);
 	printf("\n%s\n\n",c);
 	printf(">>running main function \x1b[42m[1/2 done]\x1b[0m\n");
         urlopen(c);
