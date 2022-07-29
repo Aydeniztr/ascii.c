@@ -108,7 +108,7 @@ int main(void) {
 	char prt2[] = "&mode=A&size=100&carstr=";
 	char prt3[] = "&order=O&invert=Y";
 	char link[256];
-	char c[] = "";
+	char combined_line[] = "";
 	char counter;
 	int count;
 	int i;
@@ -117,10 +117,10 @@ int main(void) {
 	scanf("%s", link);
 
 	sprintf(combine, "%s%s%s%s%s", prt1, link, prt2, charset, prt3);
-	sscanf(combine, "%s", c);
-	printf("\n%s\n\n",c);
+	sscanf(combine, "%s", combined_line);
+	printf("\n%s\n\n",combined_line);
 	printf(">>running main function \x1b[42m[1/2 done]\x1b[0m\n");
-        urlopen(c);
+        urlopen(combined_line);
 	printf(">>running modify function \x1b[42m[2/2 done]\x1b[0m\n");	
 
 	source = fopen("tempfile", "r");
